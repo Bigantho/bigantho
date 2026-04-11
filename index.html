@@ -291,9 +291,9 @@
         }
         
         .nav-cta {
-            padding: 0.75rem 1.5rem;
+            padding: 0.75rem 1.5rem  !important;
             background: var(--color-dark);
-            color: var(--color-white);
+            color: var(--color-white) !important;
             border-radius: 50px;
             font-weight: 600;
             transition: var(--transition-fast);
@@ -301,7 +301,7 @@
         
         .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+            /* box-shadow: var(--shadow-md); */
         }
         
         .nav-toggle {
@@ -654,7 +654,7 @@
         .hero-socials {
             display: flex;
             gap: var(--space-sm);
-            margin-top: var(--space-xl);
+            margin-top: var(--space-md);
             opacity: 0;
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.5s;
@@ -1635,20 +1635,20 @@
                                     <span class="hint">500×500px recomendado</span>
                                 </div> -->
                                 <!-- Descomenta la línea siguiente y añade tu foto -->
-                                <img src="./src/images/yo_enhance.png" alt="Anthony Vasquez - Software Developer" class="hero-image">
+                                <img src="./src/images/yo_enhance.png" alt="Anthony Vasquez - Full Stack Software Developer" class="hero-image">
                             </div>
                         </div>
                         
                         <!-- Floating badges -->
                         <div class="hero-float hero-float-1">
-                            <span class="emoji">⚡</span> Full Stack
+                            <span class="emoji">⚡</span> Full Stack Software Developer
                         </div>
                         <div class="hero-float hero-float-2">
                             <div class="number">5+</div>
                             <div class="label">Años exp.</div>
                         </div>
                         <div class="hero-float hero-float-3">
-                            <div class="number">50+</div>
+                            <div class="number">15+</div>
                             <div class="label">Proyectos</div>
                         </div>
                     </div>
@@ -1664,18 +1664,15 @@
             <span class="marquee-item"><span class="dot"></span>Node.js</span>
             <span class="marquee-item"><span class="dot"></span>TypeScript</span>
             <span class="marquee-item"><span class="dot"></span>AWS</span>
-            <span class="marquee-item"><span class="dot"></span>Python</span>
             <span class="marquee-item"><span class="dot"></span>PostgreSQL</span>
-            <span class="marquee-item"><span class="dot"></span>Docker</span>
-            <span class="marquee-item"><span class="dot"></span>GraphQL</span>
-            <span class="marquee-item"><span class="dot"></span>React</span>
-            <span class="marquee-item"><span class="dot"></span>Node.js</span>
-            <span class="marquee-item"><span class="dot"></span>TypeScript</span>
+            <span class="marquee-item"><span class="dot"></span>Vue JS</span>
+            <span class="marquee-item"><span class="dot"></span>SQL</span>
             <span class="marquee-item"><span class="dot"></span>AWS</span>
-            <span class="marquee-item"><span class="dot"></span>Python</span>
             <span class="marquee-item"><span class="dot"></span>PostgreSQL</span>
-            <span class="marquee-item"><span class="dot"></span>Docker</span>
-            <span class="marquee-item"><span class="dot"></span>GraphQL</span>
+            <span class="marquee-item"><span class="dot"></span>MySQL</span>
+            <span class="marquee-item"><span class="dot"></span>WordPress</span>
+            <span class="marquee-item"><span class="dot"></span>PHP</span>
+            <span class="marquee-item"><span class="dot"></span>C#</span>
         </div>
     </div>
     
@@ -1690,16 +1687,16 @@
                     </div>
                     <p class="about-text">
                         Soy un <strong>Software Developer</strong> apasionado por crear soluciones 
-                        digitales que impactan positivamente en la vida de las personas.
+                        digitales que impactan positivamente en la vida de las personas y empresas.
                     </p>
                     <p class="about-text">
-                        Con más de 5 años de experiencia, me especializo en desarrollo 
-                        <strong>Full Stack</strong> utilizando tecnologías modernas como React, 
-                        Node.js y arquitecturas cloud con AWS.
+                        Con más de cinco años de experiencia en ingeniería de software, me especializo en el desarrollo <strong>Full Stack</strong>, 
+                        creando aplicaciones web escalables y eficientes. He colaborado en proyectos de éxito, entre ellos un sistema de gestión de recursos humanos, optimizando los procesos internos.
+                         
                     </p>
                     <p class="about-text">
-                        Mi enfoque combina código limpio, diseño intuitivo y soluciones escalables 
-                        para crear productos digitales excepcionales.
+                         Domino JavaScript, HTML/CSS, Vue.js, Node.js, Express.js y WordPress; me mantengo al día de las tendencias del sector y IA. 
+                         Disfruto resolviendo problemas complejos con las últimas tecnologías.                       
                     </p>
                 </div>
                 <div class="about-cards reveal">
@@ -1708,13 +1705,13 @@
                         <div class="about-card-label">Años de experiencia</div>
                     </article>
                     <article class="about-card">
-                        <div class="about-card-number">50+</div>
+                        <div class="about-card-number">15+</div>
                         <div class="about-card-label">Proyectos completados</div>
                     </article>
-                    <article class="about-card">
+                    <!-- <article class="about-card">
                         <div class="about-card-number">20+</div>
                         <div class="about-card-label">Clientes satisfechos</div>
-                    </article>
+                    </article> -->
                     <article class="about-card">
                         <div class="about-card-number">∞</div>
                         <div class="about-card-label">Tazas de café</div>
@@ -1923,43 +1920,73 @@
             </header>
             <div class="timeline">
                 <article class="timeline-item reveal">
-                    <div class="timeline-date">2022 - Presente</div>
+                    <div class="timeline-date">Jul 2025 - Presente</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Senior Software Developer</h3>
-                        <p class="timeline-company">TechCorp Solutions</p>
+                        <h3 class="timeline-title">Analista de datos</h3>
+                        <p class="timeline-company">Mazama</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Liderazgo técnico de equipo de 5 devs</li>
-                                <li>Arquitectura de microservicios</li>
-                                <li>40% mejora en rendimiento</li>
+                                <li>Diseño y desarrollo de soluciones tecnológicas para la optimización de procesos.</li>
+                                <li>Análisis e interpretación de informes y datos sobre la producción y el rendimiento del personal.</li>
+                                <li>Elaboración de informes puntuales para la dirección con el fin de facilitar la toma de decisiones oportuna.</li>
                             </ul>
                         </div>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
-                    <div class="timeline-date">2020 - 2022</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Full Stack Developer</h3>
-                        <p class="timeline-company">Digital Agency XYZ</p>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>+15 aplicaciones web desarrolladas</li>
-                                <li>Integraciones de APIs y pagos</li>
-                                <li>Mentoría a devs junior</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-date">Jul 2020 - Presente</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Frontend Developer</h3>
-                        <p class="timeline-company">Startup Innovation Labs</p>
+                        <p class="timeline-company">Tejon TechLabs</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Desarrollo de UI con React</li>
-                                <li>Sistemas de componentes</li>
-                                <li>Optimización de rendimiento</li>
+                                <li>Diseñar y desarrollar sitios web adaptativos utilizando WordPress u otras tecnologías de vanguardia.</li>
+                                <li>Colaborar con los clientes para comprender sus necesidades y desarrollar soluciones a medida.</li>
+                                <li>Coordinar y gestionar un equipo multirregional para garantizar la finalización satisfactoria y puntual de los proyectos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-date">Abr 2023 - May 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full Stack Software Developer</h3>
+                        <p class="timeline-company">Red 5G</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Diseño e implementación de sistemas a medida para ampliar la presencia en los mercados internacionales.</li>
+                                <li>Aumento del volumen de ventas mediante herramientas digitales.</li>
+                                <li>Innovación y optimización de procesos para impulsar el crecimiento de las ventas.</li>
+                                <li>Implementación de pasarelas de pago para la facturación a los clientes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                  <article class="timeline-item reveal">
+                    <div class="timeline-date">Feb 2022 - Abr 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full Stack Software Developer</h3>
+                        <p class="timeline-company">Ministerio de Salud de El Salvador</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Diseñar interfaces de usuario adaptativas y eficientes.</li>
+                                <li>Desarrollar servicios de back-end que garanticen el uso adecuado de los recursos y mantengan la seguridad del sistema.</li>
+                                <li>Comprender y estructurar la lógica de los procesos para el desarrollo de una base de datos eficiente.</li>
+                                <li>Colaborar con el equipo de requerimientos para comprender el flujo de los procesos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                 <article class="timeline-item reveal">
+                    <div class="timeline-date">Dec 2021 - Feb 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Analista de sistemas</h3>
+                        <p class="timeline-company">Impresos Multiples</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Implementar un sistema a medida para optimizar el actual sistema de análisis y planificación de la producción de la empresa.</li>
+                                <li>Desarrollar el sistema centrándose en la mejora de los procesos de toma de decisiones.</li>
+                                <li>Garantizar que el sistema se adapte a las necesidades específicas de la empresa.</li>
                             </ul>
                         </div>
                     </div>
