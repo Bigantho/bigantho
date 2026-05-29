@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Anthony Vasquez | Software Developer - Full Stack Engineer</title>
-    <meta name="description" content="Software Developer especializado en desarrollo Full Stack, arquitectura cloud y soluciones escalables. +5 años creando aplicaciones web modernas con React, Node.js y AWS.">
-    <meta name="keywords" content="Software Developer, Full Stack Developer, React, Node.js, TypeScript, AWS, Cloud Architecture, Web Development">
+    <meta name="description"
+        content="Software Developer especializado en desarrollo Full Stack, arquitectura cloud y soluciones escalables. +5 años creando aplicaciones web modernas con React, Node.js y AWS.">
+    <meta name="keywords"
+        content="Software Developer, Full Stack Developer, React, Node.js, TypeScript, AWS, Cloud Architecture, Web Development">
     <meta name="author" content="Anthony Vasquez">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Anthony Vasquez | Software Developer">
-    <meta property="og:description" content="Software Developer especializado en Full Stack y soluciones Cloud. Creando experiencias digitales excepcionales.">
+    <meta property="og:description"
+        content="Software Developer especializado en Full Stack y soluciones Cloud. Creando experiencias digitales excepcionales.">
     <meta property="og:image" content="https://bigantho.com/og-image.jpg">
     <meta property="og:url" content="https://bigantho.com">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Anthony Vasquez | Software Developer">
     <meta name="twitter:description" content="Software Developer especializado en Full Stack y soluciones Cloud.">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://bigantho.com">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -50,7 +57,7 @@
         "knowsAbout": ["JavaScript", "TypeScript", "React", "Node.js", "AWS", "Python", "Cloud Architecture"]
     }
     </script>
-    
+
     <style>
         :root {
             /* Vibrant Color Palette */
@@ -66,17 +73,17 @@
             --color-orange: #F59E0B;
             --color-cyan: #06B6D4;
             --color-white: #FFFFFF;
-            
+
             /* Gradients */
             --gradient-primary: linear-gradient(135deg, #6366F1 0%, #EC4899 50%, #F59E0B 100%);
             --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%);
-            
+            --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 100%);
+
             /* Typography */
             --font-display: 'Syne', sans-serif;
             --font-body: 'Space Grotesk', sans-serif;
             --font-mono: 'Fira Code', monospace;
-            
+
             /* Spacing */
             --space-xs: 0.5rem;
             --space-sm: 1rem;
@@ -85,31 +92,33 @@
             --space-xl: 4rem;
             --space-2xl: 6rem;
             --space-3xl: 10rem;
-            
+
             /* Effects */
             --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.15);
             --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.3);
-            
+
             /* Transitions */
             --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         /* Reset & Base */
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
             font-size: 16px;
         }
-        
+
         body {
             font-family: var(--font-body);
             background-color: var(--color-bg);
@@ -117,12 +126,12 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         ::selection {
             background: var(--color-primary);
             color: var(--color-white);
         }
-        
+
         /* Custom Cursor */
         .cursor {
             width: 20px;
@@ -135,12 +144,12 @@
             transition: transform 0.15s ease, background 0.15s ease;
             mix-blend-mode: difference;
         }
-        
+
         .cursor.hover {
             transform: scale(2);
             background: var(--color-primary);
         }
-        
+
         /* Animated Background */
         .bg-animation {
             position: fixed;
@@ -152,7 +161,7 @@
             z-index: -1;
             overflow: hidden;
         }
-        
+
         .bg-animation .shape {
             position: absolute;
             border-radius: 50%;
@@ -160,7 +169,7 @@
             opacity: 0.5;
             animation: float 20s ease-in-out infinite;
         }
-        
+
         .bg-animation .shape:nth-child(1) {
             width: 600px;
             height: 600px;
@@ -169,7 +178,7 @@
             right: -200px;
             animation-delay: 0s;
         }
-        
+
         .bg-animation .shape:nth-child(2) {
             width: 400px;
             height: 400px;
@@ -178,7 +187,7 @@
             left: -100px;
             animation-delay: -5s;
         }
-        
+
         .bg-animation .shape:nth-child(3) {
             width: 300px;
             height: 300px;
@@ -187,38 +196,54 @@
             left: 50%;
             animation-delay: -10s;
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(50px, 50px) rotate(90deg); }
-            50% { transform: translate(0, 100px) rotate(180deg); }
-            75% { transform: translate(-50px, 50px) rotate(270deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(50px, 50px) rotate(90deg);
+            }
+
+            50% {
+                transform: translate(0, 100px) rotate(180deg);
+            }
+
+            75% {
+                transform: translate(-50px, 50px) rotate(270deg);
+            }
         }
-        
+
         /* Typography */
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: var(--font-display);
             font-weight: 700;
             line-height: 1.1;
         }
-        
+
         a {
             color: inherit;
             text-decoration: none;
         }
-        
+
         /* Layout */
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 var(--space-lg);
         }
-        
+
         section {
             padding: var(--space-3xl) 0;
             position: relative;
         }
-        
+
         /* Navigation */
         .nav {
             position: fixed;
@@ -229,19 +254,19 @@
             padding: var(--space-md) 0;
             transition: var(--transition-medium);
         }
-        
+
         .nav.scrolled {
             background: rgba(250, 250, 250, 0.8);
             backdrop-filter: blur(20px);
             box-shadow: var(--shadow-sm);
         }
-        
+
         .nav-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .nav-logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
@@ -251,13 +276,13 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .nav-links {
             display: flex;
             gap: var(--space-lg);
             list-style: none;
         }
-        
+
         .nav-links a {
             font-size: 0.95rem;
             font-weight: 500;
@@ -266,7 +291,7 @@
             padding: 0.5rem 0;
             transition: var(--transition-fast);
         }
-        
+
         .nav-links a::before {
             content: '';
             position: absolute;
@@ -280,30 +305,30 @@
             transform-origin: right;
             transition: transform var(--transition-fast);
         }
-        
+
         .nav-links a:hover {
             color: var(--color-text);
         }
-        
+
         .nav-links a:hover::before {
             transform: scaleX(1);
             transform-origin: left;
         }
-        
+
         .nav-cta {
-            padding: 0.75rem 1.5rem  !important;
+            padding: 0.75rem 1.5rem !important;
             background: var(--color-dark);
             color: var(--color-white) !important;
             border-radius: 50px;
             font-weight: 600;
             transition: var(--transition-fast);
         }
-        
+
         .nav-cta:hover {
             transform: translateY(-2px);
             /* box-shadow: var(--shadow-md); */
         }
-        
+
         .nav-toggle {
             display: none;
             flex-direction: column;
@@ -312,7 +337,7 @@
             padding: 5px;
             z-index: 1001;
         }
-        
+
         .nav-toggle span {
             width: 28px;
             height: 3px;
@@ -320,7 +345,7 @@
             border-radius: 2px;
             transition: var(--transition-fast);
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -329,19 +354,19 @@
             padding-top: 100px;
             overflow: hidden;
         }
-        
+
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: var(--space-2xl);
             align-items: center;
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 2;
         }
-        
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -357,7 +382,7 @@
             opacity: 0;
             animation: slideUp 0.8s ease forwards;
         }
-        
+
         .hero-badge .dot {
             width: 8px;
             height: 8px;
@@ -365,12 +390,21 @@
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
-        
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.2); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
         }
-        
+
         .hero-title {
             font-size: clamp(3rem, 7vw, 5.5rem);
             letter-spacing: -0.03em;
@@ -379,24 +413,24 @@
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.1s;
         }
-        
+
         .hero-title .line {
             display: block;
             overflow: hidden;
         }
-        
+
         .hero-title .gradient-text {
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .hero-title .outline-text {
             -webkit-text-stroke: 2px var(--color-dark);
             -webkit-text-fill-color: transparent;
         }
-        
+
         .hero-description {
             font-size: 1.25rem;
             color: var(--color-text-muted);
@@ -406,7 +440,7 @@
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.2s;
         }
-        
+
         .hero-cta {
             display: flex;
             gap: var(--space-md);
@@ -415,7 +449,7 @@
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.3s;
         }
-        
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -431,12 +465,12 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .btn-primary {
             background: var(--color-dark);
             color: var(--color-white);
         }
-        
+
         .btn-primary::before {
             content: '';
             position: absolute;
@@ -445,43 +479,43 @@
             opacity: 0;
             transition: var(--transition-fast);
         }
-        
+
         .btn-primary:hover::before {
             opacity: 1;
         }
-        
+
         .btn-primary span {
             position: relative;
             z-index: 1;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: var(--shadow-lg), var(--shadow-glow);
         }
-        
+
         .btn-secondary {
             background: transparent;
             border: 2px solid var(--color-dark);
             color: var(--color-dark);
         }
-        
+
         .btn-secondary:hover {
             background: var(--color-dark);
             color: var(--color-white);
             transform: translateY(-3px);
         }
-        
+
         .btn svg {
             width: 18px;
             height: 18px;
             transition: transform var(--transition-fast);
         }
-        
+
         .btn:hover svg {
             transform: translateX(4px);
         }
-        
+
         /* Hero Image */
         .hero-visual {
             position: relative;
@@ -489,14 +523,14 @@
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.4s;
         }
-        
+
         .hero-image-wrapper {
             position: relative;
             width: 100%;
             max-width: 500px;
             margin: 0 auto;
         }
-        
+
         .hero-image-container {
             position: relative;
             aspect-ratio: 1;
@@ -507,11 +541,11 @@
             transform: rotate(3deg);
             transition: var(--transition-medium);
         }
-        
+
         .hero-image-container:hover {
             transform: rotate(0deg) scale(1.02);
         }
-        
+
         .hero-image-inner {
             width: 100%;
             height: 100%;
@@ -520,7 +554,7 @@
             background: var(--color-bg);
             position: relative;
         }
-        
+
         .hero-image {
             width: 100%;
             height: 100%;
@@ -528,11 +562,11 @@
             object-position: center top;
             transition: var(--transition-slow);
         }
-        
+
         .hero-image-container:hover .hero-image {
             transform: scale(1.05);
         }
-        
+
         /* Photo placeholder with instructions */
         .hero-image-placeholder {
             width: 100%;
@@ -546,17 +580,17 @@
             text-align: center;
             padding: var(--space-lg);
         }
-        
+
         .hero-image-placeholder .icon {
             font-size: 4rem;
             margin-bottom: var(--space-sm);
         }
-        
+
         .hero-image-placeholder .text {
             font-size: 0.9rem;
             line-height: 1.5;
         }
-        
+
         .hero-image-placeholder .hint {
             font-family: var(--font-mono);
             font-size: 0.75rem;
@@ -566,7 +600,7 @@
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
         }
-        
+
         /* Floating elements around photo */
         .hero-float {
             position: absolute;
@@ -579,27 +613,29 @@
             animation: floatBadge 4s ease-in-out infinite;
             z-index: 10;
         }
-        
+
         .hero-float-1 {
             top: 10%;
             left: -20%;
             background: var(--color-white);
         }
-        
-        .hero-float-1 .emoji { margin-right: 0.5rem; }
-        
+
+        .hero-float-1 .emoji {
+            margin-right: 0.5rem;
+        }
+
         .hero-float-2 {
             bottom: 20%;
             right: -15%;
             animation-delay: -1s;
         }
-        
+
         .hero-float-3 {
             bottom: 5%;
             left: -10%;
             animation-delay: -2s;
         }
-        
+
         .hero-float .number {
             font-family: var(--font-display);
             font-size: 1.5rem;
@@ -608,18 +644,25 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .hero-float .label {
             font-size: 0.75rem;
             color: var(--color-text-muted);
             font-weight: 400;
         }
-        
+
         @keyframes floatBadge {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
-        
+
         /* Decorative circles */
         .hero-deco {
             position: absolute;
@@ -627,7 +670,7 @@
             border: 2px dashed rgba(99, 102, 241, 0.3);
             pointer-events: none;
         }
-        
+
         .hero-deco-1 {
             width: 120%;
             height: 120%;
@@ -635,7 +678,7 @@
             left: -10%;
             animation: spin 30s linear infinite;
         }
-        
+
         .hero-deco-2 {
             width: 140%;
             height: 140%;
@@ -644,12 +687,17 @@
             border-color: rgba(236, 72, 153, 0.2);
             animation: spin 40s linear infinite reverse;
         }
-        
+
         @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
-        
+
         /* Social Links - Hero */
         .hero-socials {
             display: flex;
@@ -659,7 +707,7 @@
             animation: slideUp 0.8s ease forwards;
             animation-delay: 0.5s;
         }
-        
+
         .social-link {
             width: 50px;
             height: 50px;
@@ -671,48 +719,49 @@
             transition: var(--transition-fast);
             background: var(--color-white);
         }
-        
+
         .social-link:hover {
             border-color: var(--color-primary);
             background: var(--color-primary);
             transform: translateY(-5px);
         }
-        
+
         .social-link:hover svg {
             fill: var(--color-white);
         }
-        
+
         .social-link svg {
             width: 20px;
             height: 20px;
             fill: var(--color-text-muted);
             transition: var(--transition-fast);
         }
-        
+
         @keyframes slideUp {
             from {
                 opacity: 0;
                 transform: translateY(40px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Marquee */
         .marquee-section {
             padding: var(--space-xl) 0;
             background: var(--color-dark);
             overflow: hidden;
         }
-        
+
         .marquee {
             display: flex;
             gap: var(--space-xl);
             animation: marquee 30s linear infinite;
         }
-        
+
         .marquee-item {
             display: flex;
             align-items: center;
@@ -723,25 +772,30 @@
             color: var(--color-white);
             white-space: nowrap;
         }
-        
+
         .marquee-item .dot {
             width: 12px;
             height: 12px;
             background: var(--gradient-primary);
             border-radius: 50%;
         }
-        
+
         @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
         }
-        
+
         /* About Section */
         .about {
             background: var(--color-white);
             position: relative;
         }
-        
+
         .about::before {
             content: '';
             position: absolute;
@@ -751,18 +805,18 @@
             height: 1px;
             background: var(--gradient-primary);
         }
-        
+
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
             gap: var(--space-2xl);
             align-items: center;
         }
-        
+
         .section-header {
             margin-bottom: var(--space-lg);
         }
-        
+
         .section-number {
             font-family: var(--font-mono);
             font-size: 0.9rem;
@@ -770,17 +824,17 @@
             margin-bottom: var(--space-sm);
             display: block;
         }
-        
+
         .section-title {
             font-size: clamp(2.5rem, 5vw, 4rem);
             letter-spacing: -0.02em;
         }
-        
+
         .section-title .highlight {
             position: relative;
             display: inline-block;
         }
-        
+
         .section-title .highlight::after {
             content: '';
             position: absolute;
@@ -792,24 +846,24 @@
             z-index: -1;
             transform: skewX(-5deg);
         }
-        
+
         .about-text {
             font-size: 1.15rem;
             color: var(--color-text-muted);
             margin-bottom: var(--space-md);
             line-height: 1.8;
         }
-        
+
         .about-text strong {
             color: var(--color-text);
         }
-        
+
         .about-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: var(--space-md);
         }
-        
+
         .about-card {
             padding: var(--space-lg);
             background: var(--color-bg);
@@ -818,7 +872,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .about-card::before {
             content: '';
             position: absolute;
@@ -831,16 +885,16 @@
             transform-origin: bottom;
             transition: var(--transition-medium);
         }
-        
+
         .about-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-md);
         }
-        
+
         .about-card:hover::before {
             transform: scaleY(1);
         }
-        
+
         .about-card-number {
             font-family: var(--font-display);
             font-size: 3rem;
@@ -851,36 +905,36 @@
             background-clip: text;
             line-height: 1;
         }
-        
+
         .about-card-label {
             font-size: 0.9rem;
             color: var(--color-text-muted);
             margin-top: var(--space-xs);
         }
-        
+
         /* Skills Section */
         .skills {
             background: var(--color-bg);
         }
-        
+
         .skills-header {
             text-align: center;
             max-width: 700px;
             margin: 0 auto var(--space-2xl);
         }
-        
+
         .skills-subtitle {
             font-size: 1.15rem;
             color: var(--color-text-muted);
             margin-top: var(--space-md);
         }
-        
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: var(--space-md);
         }
-        
+
         .skill-card {
             background: var(--color-white);
             border-radius: 24px;
@@ -891,7 +945,7 @@
             overflow: hidden;
             border: 1px solid transparent;
         }
-        
+
         .skill-card::before {
             content: '';
             position: absolute;
@@ -900,62 +954,62 @@
             opacity: 0;
             transition: var(--transition-medium);
         }
-        
+
         .skill-card:hover {
             transform: translateY(-10px);
             border-color: transparent;
         }
-        
+
         .skill-card:hover::before {
             opacity: 1;
         }
-        
+
         .skill-card-inner {
             position: relative;
             z-index: 1;
         }
-        
+
         .skill-card:hover .skill-card-inner {
             color: var(--color-white);
         }
-        
+
         .skill-icon {
             font-size: 3rem;
             margin-bottom: var(--space-md);
             display: block;
         }
-        
+
         .skill-name {
             font-family: var(--font-display);
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: var(--space-xs);
         }
-        
+
         .skill-level {
             font-size: 0.85rem;
             color: var(--color-text-muted);
             transition: var(--transition-fast);
         }
-        
+
         .skill-card:hover .skill-level {
             color: rgba(255, 255, 255, 0.8);
         }
-        
+
         /* Projects Section */
         .projects {
             background: var(--color-dark);
             color: var(--color-white);
         }
-        
+
         .projects .section-number {
             color: var(--color-primary-light);
         }
-        
+
         .projects .section-title .highlight::after {
             background: rgba(99, 102, 241, 0.4);
         }
-        
+
         .projects-header {
             display: flex;
             justify-content: space-between;
@@ -964,12 +1018,12 @@
             flex-wrap: wrap;
             gap: var(--space-md);
         }
-        
+
         .projects-grid {
             display: grid;
             gap: var(--space-lg);
         }
-        
+
         .project-card {
             display: grid;
             grid-template-columns: 1.3fr 1fr;
@@ -981,21 +1035,21 @@
             transition: var(--transition-medium);
             align-items: center;
         }
-        
+
         .project-card:hover {
             background: rgba(255, 255, 255, 0.05);
             border-color: rgba(99, 102, 241, 0.3);
             transform: translateY(-5px);
         }
-        
+
         .project-card:nth-child(even) {
             grid-template-columns: 1fr 1.3fr;
         }
-        
+
         .project-card:nth-child(even) .project-image {
             order: 2;
         }
-        
+
         .project-image {
             aspect-ratio: 16/10;
             border-radius: 20px;
@@ -1003,7 +1057,7 @@
             position: relative;
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%);
         }
-        
+
         .project-image-inner {
             width: 100%;
             height: 100%;
@@ -1012,32 +1066,32 @@
             justify-content: center;
             font-size: 5rem;
         }
-        
+
         .project-number {
             font-family: var(--font-display);
             font-size: 0.9rem;
             color: var(--color-primary-light);
             margin-bottom: var(--space-sm);
         }
-        
+
         .project-title {
             font-size: 2rem;
             margin-bottom: var(--space-sm);
         }
-        
+
         .project-description {
             color: rgba(255, 255, 255, 0.6);
             margin-bottom: var(--space-md);
             line-height: 1.7;
         }
-        
+
         .project-tech {
             display: flex;
             flex-wrap: wrap;
             gap: var(--space-xs);
             margin-bottom: var(--space-lg);
         }
-        
+
         .project-tech span {
             font-family: var(--font-mono);
             font-size: 0.8rem;
@@ -1046,12 +1100,12 @@
             color: var(--color-primary-light);
             border-radius: 50px;
         }
-        
+
         .project-links {
             display: flex;
             gap: var(--space-md);
         }
-        
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -1060,32 +1114,32 @@
             color: var(--color-white);
             transition: var(--transition-fast);
         }
-        
+
         .project-link:hover {
             color: var(--color-primary-light);
         }
-        
+
         .project-link svg {
             width: 18px;
             height: 18px;
         }
-        
+
         /* Experience Section */
         .experience {
             background: var(--color-white);
         }
-        
+
         .experience-header {
             text-align: center;
             margin-bottom: var(--space-2xl);
         }
-        
+
         .timeline {
             max-width: 900px;
             margin: 0 auto;
             position: relative;
         }
-        
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -1096,7 +1150,7 @@
             background: var(--gradient-primary);
             transform: translateX(-50%);
         }
-        
+
         .timeline-item {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1104,7 +1158,7 @@
             margin-bottom: var(--space-xl);
             position: relative;
         }
-        
+
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -1118,116 +1172,116 @@
             transform: translateX(-50%);
             z-index: 1;
         }
-        
+
         .timeline-item:nth-child(even) .timeline-content {
             grid-column: 2;
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-content {
             grid-column: 1;
             text-align: right;
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-date {
             grid-column: 2;
             padding-left: var(--space-xl);
         }
-        
+
         .timeline-item:nth-child(even) .timeline-date {
             grid-column: 1;
             text-align: right;
             padding-right: var(--space-xl);
         }
-        
+
         .timeline-date {
             font-family: var(--font-mono);
             font-size: 0.9rem;
             color: var(--color-primary);
             padding-top: var(--space-lg);
         }
-        
+
         .timeline-content {
             background: var(--color-bg);
             padding: var(--space-lg);
             border-radius: 20px;
             transition: var(--transition-medium);
         }
-        
+
         .timeline-content:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-md);
         }
-        
+
         .timeline-title {
             font-size: 1.5rem;
             margin-bottom: var(--space-xs);
         }
-        
+
         .timeline-company {
             font-weight: 600;
             color: var(--color-primary);
             margin-bottom: var(--space-sm);
         }
-        
+
         .timeline-description {
             color: var(--color-text-muted);
             font-size: 0.95rem;
         }
-        
+
         .timeline-description ul {
             list-style: none;
             margin-top: var(--space-sm);
         }
-        
+
         .timeline-description li {
             padding: var(--space-xs) 0;
             position: relative;
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-description li {
             padding-right: var(--space-md);
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-description li::after {
             content: '←';
             position: absolute;
             right: 0;
             color: var(--color-primary);
         }
-        
+
         .timeline-item:nth-child(even) .timeline-description li {
             padding-left: var(--space-md);
         }
-        
+
         .timeline-item:nth-child(even) .timeline-description li::before {
             content: '→';
             position: absolute;
             left: 0;
             color: var(--color-primary);
         }
-        
+
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #EC4899 100%);
             color: var(--color-white);
             text-align: center;
         }
-        
+
         .contact .section-number {
             color: rgba(255, 255, 255, 0.7);
         }
-        
+
         .contact .section-title {
             margin-bottom: var(--space-md);
         }
-        
+
         .contact-subtitle {
             font-size: 1.25rem;
             opacity: 0.9;
             max-width: 600px;
             margin: 0 auto var(--space-xl);
         }
-        
+
         .contact-email {
             font-family: var(--font-display);
             font-size: clamp(1.5rem, 4vw, 3rem);
@@ -1237,7 +1291,7 @@
             position: relative;
             transition: var(--transition-fast);
         }
-        
+
         .contact-email::after {
             content: '';
             position: absolute;
@@ -1248,11 +1302,11 @@
             background: var(--color-white);
             border-radius: 2px;
         }
-        
+
         .contact-email:hover {
             transform: scale(1.05);
         }
-        
+
         .contact-cta {
             display: flex;
             justify-content: center;
@@ -1260,61 +1314,61 @@
             flex-wrap: wrap;
             margin-bottom: var(--space-2xl);
         }
-        
+
         .contact .btn-primary {
             background: var(--color-white);
             color: var(--color-primary);
         }
-        
+
         .contact .btn-primary::before {
             background: var(--color-dark);
         }
-        
+
         .contact .btn-primary:hover {
             color: var(--color-white);
         }
-        
+
         .contact .btn-secondary {
             border-color: var(--color-white);
             color: var(--color-white);
         }
-        
+
         .contact .btn-secondary:hover {
             background: var(--color-white);
             color: var(--color-primary);
         }
-        
+
         .contact-socials {
             display: flex;
             justify-content: center;
             gap: var(--space-md);
         }
-        
+
         .contact-socials .social-link {
             background: rgba(255, 255, 255, 0.1);
             border-color: rgba(255, 255, 255, 0.3);
         }
-        
+
         .contact-socials .social-link svg {
             fill: var(--color-white);
         }
-        
+
         .contact-socials .social-link:hover {
             background: var(--color-white);
             border-color: var(--color-white);
         }
-        
+
         .contact-socials .social-link:hover svg {
             fill: var(--color-primary);
         }
-        
+
         /* Footer */
         .footer {
             background: var(--color-dark);
             color: rgba(255, 255, 255, 0.6);
             padding: var(--space-lg) 0;
         }
-        
+
         .footer-inner {
             display: flex;
             justify-content: space-between;
@@ -1322,102 +1376,148 @@
             flex-wrap: wrap;
             gap: var(--space-md);
         }
-        
+
         .footer-copy {
             font-size: 0.9rem;
         }
-        
+
         .footer-links {
             display: flex;
             gap: var(--space-lg);
         }
-        
+
         .footer-links a {
             font-size: 0.9rem;
             transition: var(--transition-fast);
         }
-        
+
         .footer-links a:hover {
             color: var(--color-white);
         }
-        
+
         /* Scroll Reveal */
         .reveal {
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
+        /* #################### WHATSAPP BUBBLE BUTTON  ###################################################### */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 999999;
+            transition: transform 0.2s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .whatsapp-message {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background: white;
+            padding: 12px 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            max-width: 220px;
+            z-index: 999998;
+        }
+
+
+        /* ####################  / WHATSAPP BUBBLE BUTTON  ###################################################### */
+
+
+
+
         /* Responsive */
         @media (max-width: 1200px) {
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         @media (max-width: 968px) {
             .hero-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            
+
             .hero-description {
                 margin-left: auto;
                 margin-right: auto;
             }
-            
+
             .hero-cta {
                 justify-content: center;
             }
-            
+
             .hero-socials {
                 justify-content: center;
             }
-            
+
             .hero-visual {
                 order: -1;
                 margin-bottom: var(--space-xl);
             }
-            
+
             .hero-image-wrapper {
                 max-width: 350px;
             }
-            
+
             .hero-float {
                 display: none;
             }
-            
+
             .about-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .project-card,
             .project-card:nth-child(even) {
                 grid-template-columns: 1fr;
             }
-            
+
             .project-card:nth-child(even) .project-image {
                 order: 0;
             }
-            
+
             .timeline::before {
                 left: 20px;
             }
-            
+
             .timeline-item {
                 grid-template-columns: 1fr;
                 padding-left: 60px;
             }
-            
+
             .timeline-item::before {
                 left: 20px;
             }
-            
+
             .timeline-item:nth-child(odd) .timeline-content,
             .timeline-item:nth-child(even) .timeline-content,
             .timeline-item:nth-child(odd) .timeline-date,
@@ -1426,22 +1526,22 @@
                 text-align: left;
                 padding: 0;
             }
-            
+
             .timeline-date {
                 padding-top: 0 !important;
                 margin-bottom: var(--space-sm);
             }
-            
+
             .timeline-item:nth-child(odd) .timeline-description li,
             .timeline-item:nth-child(even) .timeline-description li {
                 padding-left: var(--space-md);
                 padding-right: 0;
             }
-            
+
             .timeline-item:nth-child(odd) .timeline-description li::after {
                 display: none;
             }
-            
+
             .timeline-item:nth-child(odd) .timeline-description li::before {
                 content: '→';
                 position: absolute;
@@ -1449,7 +1549,7 @@
                 color: var(--color-primary);
             }
         }
-        
+
         @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
@@ -1464,96 +1564,120 @@
                 gap: var(--space-lg);
                 transition: var(--transition-medium);
             }
-            
+
             .nav-links.active {
                 right: 0;
             }
-            
+
             .nav-links li:last-child {
                 display: none;
             }
-            
+
             .nav-links a {
                 font-size: 1.5rem;
             }
-            
+
             .nav-toggle {
                 display: flex;
             }
-            
+
             .nav-toggle.active span:nth-child(1) {
                 transform: rotate(45deg) translate(6px, 6px);
             }
-            
+
             .nav-toggle.active span:nth-child(2) {
                 opacity: 0;
             }
-            
+
             .nav-toggle.active span:nth-child(3) {
                 transform: rotate(-45deg) translate(6px, -6px);
             }
-            
+
             .cursor {
                 display: none;
             }
-            
+
             .hero {
                 padding-top: 120px;
                 min-height: auto;
             }
-            
+
             .marquee-item {
                 font-size: 1.25rem;
             }
-            
+
             .about-cards {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .skills-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         @media (max-width: 480px) {
             section {
                 padding: var(--space-2xl) 0;
             }
-            
+
             .container {
                 padding: 0 var(--space-md);
             }
-            
+
             .hero-cta {
                 flex-direction: column;
             }
-            
+
             .btn {
                 width: 100%;
                 justify-content: center;
             }
-            
+
             .about-cards {
                 grid-template-columns: 1fr;
             }
-            
+
             .project-card {
                 padding: var(--space-md);
             }
         }
     </style>
 </head>
+
 <body>
+    <!-- Mensaje flotante -->
+    <div class="whatsapp-message">
+        ¡Hola! 👋<br>
+        ¿Necesitas ayuda? Escríbenos.
+    </div>
+
+    <!-- Botón WhatsApp -->
+    <!-- <a href="https://wa.me/50377778888?text=Hola,%20quiero%20información" target="_blank" class="whatsapp-float">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a> -->
+    <a href="https://wa.me/50377778888" class="whatsapp-float">
+        <?xml version="1.0" ?>
+        <!-- License: Logo. -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z"
+                    fill="#FFF"></path>
+            </g>
+        </svg>
+    </a>
     <!-- Custom Cursor -->
     <div class="cursor"></div>
-    
+
     <!-- Animated Background -->
     <div class="bg-animation" aria-hidden="true">
         <div class="shape"></div>
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    
+
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Navegación principal">
         <div class="container nav-inner">
@@ -1572,7 +1696,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Hero Section -->
     <header id="hero" class="hero">
         <div class="container">
@@ -1588,25 +1712,33 @@
                         <span class="line"><span class="outline-text">Developer</span></span>
                     </h1>
                     <p class="hero-description">
-                        Transformo ideas en experiencias digitales excepcionales. 
-                        Full Stack Developer especializado en crear aplicaciones web 
+                        Transformo ideas en experiencias digitales excepcionales.
+                        Full Stack Developer especializado en crear aplicaciones web
                         modernas, escalables y centradas en el usuario.
                     </p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">
                             <span>Ver mi trabajo</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                                <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </a>
                         <a href="#contact" class="btn btn-secondary">Contactar</a>
                     </div>
                     <nav class="hero-socials" aria-label="Redes sociales">
-                        <a href="https://github.com/bigantho" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <a href="https://github.com/bigantho" class="social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/anthonysv/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <a href="https://www.linkedin.com/in/anthonysv/" class="social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
                         </a>
                         <!-- <a href="https://twitter.com/bigantho" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -1618,7 +1750,7 @@
                         <!-- Decorative circles -->
                         <div class="hero-deco hero-deco-1" aria-hidden="true"></div>
                         <div class="hero-deco hero-deco-2" aria-hidden="true"></div>
-                        
+
                         <!-- Main photo container -->
                         <div class="hero-image-container">
                             <div class="hero-image-inner">
@@ -1635,10 +1767,11 @@
                                     <span class="hint">500×500px recomendado</span>
                                 </div> -->
                                 <!-- Descomenta la línea siguiente y añade tu foto -->
-                                <img src="./src/images/yo_enhance.png" alt="Anthony Vasquez - Full Stack Software Developer" class="hero-image">
+                                <img src="./src/images/yo_enhance.png"
+                                    alt="Anthony Vasquez - Full Stack Software Developer" class="hero-image">
                             </div>
                         </div>
-                        
+
                         <!-- Floating badges -->
                         <div class="hero-float hero-float-1">
                             <span class="emoji">⚡</span> Full Stack Software Developer
@@ -1656,7 +1789,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Marquee Section -->
     <div class="marquee-section" aria-hidden="true">
         <div class="marquee">
@@ -1675,7 +1808,7 @@
             <span class="marquee-item"><span class="dot"></span>C#</span>
         </div>
     </div>
-    
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -1686,17 +1819,20 @@
                         <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
                     </div>
                     <p class="about-text">
-                        Soy un <strong>Software Developer</strong> apasionado por crear soluciones 
+                        Soy un <strong>Software Developer</strong> apasionado por crear soluciones
                         digitales que impactan positivamente en la vida de las personas y empresas.
                     </p>
                     <p class="about-text">
-                        Con más de cinco años de experiencia en ingeniería de software, me especializo en el desarrollo <strong>Full Stack</strong>, 
-                        creando aplicaciones web escalables y eficientes. He colaborado en proyectos de éxito, entre ellos un sistema de gestión de recursos humanos, optimizando los procesos internos.
-                         
+                        Con más de cinco años de experiencia en ingeniería de software, me especializo en el desarrollo
+                        <strong>Full Stack</strong>,
+                        creando aplicaciones web escalables y eficientes. He colaborado en proyectos de éxito, entre
+                        ellos un sistema de gestión de recursos humanos, optimizando los procesos internos.
+
                     </p>
                     <p class="about-text">
-                         Domino JavaScript, HTML/CSS, Vue.js, Node.js, Express.js y WordPress; me mantengo al día de las tendencias del sector y IA. 
-                         Disfruto resolviendo problemas complejos con las últimas tecnologías.                       
+                        Domino JavaScript, HTML/CSS, Vue.js, Node.js, Express.js y WordPress; me mantengo al día de las
+                        tendencias del sector y IA.
+                        Disfruto resolviendo problemas complejos con las últimas tecnologías.
                     </p>
                 </div>
                 <div class="about-cards reveal">
@@ -1720,7 +1856,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -1791,7 +1927,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -1800,10 +1936,11 @@
                     <span class="section-number">03</span>
                     <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
                 </div>
-                <a href="https://github.com/bigantho" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/bigantho" class="btn btn-secondary" target="_blank"
+                    rel="noopener noreferrer">
                     <span>Ver GitHub</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
                     </svg>
                 </a>
             </header>
@@ -1816,7 +1953,7 @@
                         <span class="project-number">Proyecto 01</span>
                         <h3 class="project-title">Analytics Dashboard</h3>
                         <p class="project-description">
-                            Plataforma de análisis de datos en tiempo real con visualizaciones 
+                            Plataforma de análisis de datos en tiempo real con visualizaciones
                             interactivas, reportes personalizados y métricas de rendimiento.
                         </p>
                         <div class="project-tech">
@@ -1828,13 +1965,15 @@
                         <div class="project-links">
                             <a href="#" class="project-link" aria-label="Ver demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
                                 </svg>
                                 Demo
                             </a>
                             <a href="#" class="project-link" aria-label="Ver código">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 Código
                             </a>
@@ -1849,7 +1988,7 @@
                         <span class="project-number">Proyecto 02</span>
                         <h3 class="project-title">E-Commerce Platform</h3>
                         <p class="project-description">
-                            Tienda online completa con carrito de compras, pasarela de pagos 
+                            Tienda online completa con carrito de compras, pasarela de pagos
                             integrada, gestión de inventario y panel de administración.
                         </p>
                         <div class="project-tech">
@@ -1861,13 +2000,15 @@
                         <div class="project-links">
                             <a href="#" class="project-link" aria-label="Ver demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
                                 </svg>
                                 Demo
                             </a>
                             <a href="#" class="project-link" aria-label="Ver código">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 Código
                             </a>
@@ -1882,7 +2023,7 @@
                         <span class="project-number">Proyecto 03</span>
                         <h3 class="project-title">AI Content Generator</h3>
                         <p class="project-description">
-                            Aplicación de generación de contenido con IA que utiliza modelos 
+                            Aplicación de generación de contenido con IA que utiliza modelos
                             de lenguaje para crear textos, traducciones y resúmenes automáticos.
                         </p>
                         <div class="project-tech">
@@ -1894,13 +2035,15 @@
                         <div class="project-links">
                             <a href="#" class="project-link" aria-label="Ver demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
                                 </svg>
                                 Demo
                             </a>
                             <a href="#" class="project-link" aria-label="Ver código">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 Código
                             </a>
@@ -1910,7 +2053,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -1926,9 +2069,12 @@
                         <p class="timeline-company">Mazama</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Diseño y desarrollo de soluciones tecnológicas para la optimización de procesos.</li>
-                                <li>Análisis e interpretación de informes y datos sobre la producción y el rendimiento del personal.</li>
-                                <li>Elaboración de informes puntuales para la dirección con el fin de facilitar la toma de decisiones oportuna.</li>
+                                <li>Diseño y desarrollo de soluciones tecnológicas para la optimización de procesos.
+                                </li>
+                                <li>Análisis e interpretación de informes y datos sobre la producción y el rendimiento
+                                    del personal.</li>
+                                <li>Elaboración de informes puntuales para la dirección con el fin de facilitar la toma
+                                    de decisiones oportuna.</li>
                             </ul>
                         </div>
                     </div>
@@ -1940,9 +2086,12 @@
                         <p class="timeline-company">Tejon TechLabs</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Diseñar y desarrollar sitios web adaptativos utilizando WordPress u otras tecnologías de vanguardia.</li>
-                                <li>Colaborar con los clientes para comprender sus necesidades y desarrollar soluciones a medida.</li>
-                                <li>Coordinar y gestionar un equipo multirregional para garantizar la finalización satisfactoria y puntual de los proyectos.</li>
+                                <li>Diseñar y desarrollar sitios web adaptativos utilizando WordPress u otras
+                                    tecnologías de vanguardia.</li>
+                                <li>Colaborar con los clientes para comprender sus necesidades y desarrollar soluciones
+                                    a medida.</li>
+                                <li>Coordinar y gestionar un equipo multirregional para garantizar la finalización
+                                    satisfactoria y puntual de los proyectos.</li>
                             </ul>
                         </div>
                     </div>
@@ -1954,15 +2103,17 @@
                         <p class="timeline-company">Red 5G</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Diseño e implementación de sistemas a medida para ampliar la presencia en los mercados internacionales.</li>
+                                <li>Diseño e implementación de sistemas a medida para ampliar la presencia en los
+                                    mercados internacionales.</li>
                                 <li>Aumento del volumen de ventas mediante herramientas digitales.</li>
-                                <li>Innovación y optimización de procesos para impulsar el crecimiento de las ventas.</li>
+                                <li>Innovación y optimización de procesos para impulsar el crecimiento de las ventas.
+                                </li>
                                 <li>Implementación de pasarelas de pago para la facturación a los clientes.</li>
                             </ul>
                         </div>
                     </div>
                 </article>
-                  <article class="timeline-item reveal">
+                <article class="timeline-item reveal">
                     <div class="timeline-date">Feb 2022 - Abr 2023</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Full Stack Software Developer</h3>
@@ -1970,23 +2121,29 @@
                         <div class="timeline-description">
                             <ul>
                                 <li>Diseñar interfaces de usuario adaptativas y eficientes.</li>
-                                <li>Desarrollar servicios de back-end que garanticen el uso adecuado de los recursos y mantengan la seguridad del sistema.</li>
-                                <li>Comprender y estructurar la lógica de los procesos para el desarrollo de una base de datos eficiente.</li>
-                                <li>Colaborar con el equipo de requerimientos para comprender el flujo de los procesos.</li>
+                                <li>Desarrollar servicios de back-end que garanticen el uso adecuado de los recursos y
+                                    mantengan la seguridad del sistema.</li>
+                                <li>Comprender y estructurar la lógica de los procesos para el desarrollo de una base de
+                                    datos eficiente.</li>
+                                <li>Colaborar con el equipo de requerimientos para comprender el flujo de los procesos.
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </article>
-                 <article class="timeline-item reveal">
+                <article class="timeline-item reveal">
                     <div class="timeline-date">Dec 2021 - Feb 2022</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Analista de sistemas</h3>
                         <p class="timeline-company">Impresos Multiples</p>
                         <div class="timeline-description">
                             <ul>
-                                <li>Implementar un sistema a medida para optimizar el actual sistema de análisis y planificación de la producción de la empresa.</li>
-                                <li>Desarrollar el sistema centrándose en la mejora de los procesos de toma de decisiones.</li>
-                                <li>Garantizar que el sistema se adapte a las necesidades específicas de la empresa.</li>
+                                <li>Implementar un sistema a medida para optimizar el actual sistema de análisis y
+                                    planificación de la producción de la empresa.</li>
+                                <li>Desarrollar el sistema centrándose en la mejora de los procesos de toma de
+                                    decisiones.</li>
+                                <li>Garantizar que el sistema se adapte a las necesidades específicas de la empresa.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -1994,7 +2151,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -2002,7 +2159,7 @@
                 <span class="section-number">05</span>
                 <h2 class="section-title">¿Tienes un proyecto<br>en mente?</h2>
                 <p class="contact-subtitle">
-                    Estoy disponible para freelance y colaboraciones. 
+                    Estoy disponible para freelance y colaboraciones.
                     ¡Hablemos sobre cómo puedo ayudarte!
                 </p>
                 <a href="mailto:anthony@bigantho.com" class="contact-email">
@@ -2012,7 +2169,7 @@
                     <a href="mailto:anthony@bigantho.com" class="btn btn-primary">
                         <span>Enviar email</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
                     <a href="/cv-anthony-vasquez.pdf" class="btn btn-secondary" download>
@@ -2020,11 +2177,19 @@
                     </a>
                 </div>
                 <nav class="contact-socials" aria-label="Redes sociales">
-                    <a href="https://github.com/bigantho" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <a href="https://github.com/bigantho" class="social-link" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
                     </a>
-                    <a href="https://linkedin.com/in/anthonysv" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <a href="https://linkedin.com/in/anthonysv" class="social-link" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
                     </a>
                     <!-- <a href="https://twitter.com/bigantho" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                         <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -2036,7 +2201,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-inner">
@@ -2051,19 +2216,19 @@
             </nav>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script>
         // Custom cursor
         const cursor = document.querySelector('.cursor');
         let mouseX = 0, mouseY = 0;
         let cursorX = 0, cursorY = 0;
-        
+
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
         });
-        
+
         function animateCursor() {
             cursorX += (mouseX - cursorX) * 0.1;
             cursorY += (mouseY - cursorY) * 0.1;
@@ -2072,14 +2237,14 @@
             requestAnimationFrame(animateCursor);
         }
         animateCursor();
-        
+
         // Cursor hover effect
         const hoverElements = document.querySelectorAll('a, button, .skill-card, .project-card, .about-card');
         hoverElements.forEach(el => {
             el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
             el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
         });
-        
+
         // Navigation scroll effect
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
@@ -2089,16 +2254,16 @@
                 nav.classList.remove('scrolled');
             }
         });
-        
+
         // Mobile menu toggle
         const navToggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelector('.nav-links');
-        
+
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
         });
-        
+
         // Close mobile menu on link click
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
@@ -2106,24 +2271,24 @@
                 navLinks.classList.remove('active');
             });
         });
-        
+
         // Scroll reveal animation
         const revealElements = document.querySelectorAll('.reveal');
-        
+
         const revealOnScroll = () => {
             revealElements.forEach(el => {
                 const elementTop = el.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-                
+
                 if (elementTop < windowHeight - 100) {
                     el.classList.add('active');
                 }
             });
         };
-        
+
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
-        
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -2137,7 +2302,7 @@
                 }
             });
         });
-        
+
         // Keyboard accessibility for nav toggle
         navToggle.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -2147,4 +2312,5 @@
         });
     </script>
 </body>
+
 </html>
